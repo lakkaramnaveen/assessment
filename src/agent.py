@@ -9,7 +9,7 @@ class TextToSQLAgent:
             base_url="https://api.fireworks.ai/inference/v1",
             api_key=os.environ.get("FIREWORKS_API_KEY")
         )
-        self.model = "accounts/fireworks/models/llama-v3p1-70b-instruct"
+        self.model = "accounts/fireworks/models/qwen2p5-72b-instruct"
         self.conn = conn
         self.schema = get_schema(conn)
         self.chat_history = []
